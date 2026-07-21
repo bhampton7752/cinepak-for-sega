@@ -43,15 +43,9 @@ Cinepak family, roughly in this order —
 1. **Other 'sega'-codec titles** (Sega CD era): decode-verify streams
    from additional games against the spec; document any per-title
    deviations. Test files and reports welcome via issues.
-2. **Audio playback**: the interleaved audio format is fully
-   documented (8-bit sign-magnitude PCM; STAB marks audio entries
-   with info1 == 0xFFFFFFFF; rate derived from the 600 Hz timebase).
-   The player is video-only today purely because the Python standard
-   library has no portable audio output -- adding sound is an
-   implementation task, not a research one.
-3. **Standard Cinepak ('cvid') FILM files**: the Saturn-era container
+2. **Standard Cinepak ('cvid') FILM files**: the Saturn-era container
    sibling, so one player covers the whole FILM family.
-4. **Robustness**: tolerate container variations (STAB layouts,
+3. **Robustness**: tolerate container variations (STAB layouts,
    base frequencies, dimensions) beyond the Jurassic Park profile.
 
 ## Prior art & credits
